@@ -61,7 +61,7 @@ ENGINE = InnoDB;
 -- Table `LittleLemonDM`.`Orders`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LittleLemonDM`.`Orders` (
-  `OrdersID` INT NOT NULL AUTO_INCREMENT,
+  `OrderID` INT NOT NULL AUTO_INCREMENT,
   `OrderDate` DATETIME NOT NULL,
   `CustomerID` INT NOT NULL,
   `StaffID` INT NOT NULL,
