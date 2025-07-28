@@ -1,36 +1,37 @@
-# 🍋 Proyecto: Little Lemon Database
+Project: Little Lemon Database
 
-## 🧩 Descripción
-Este repositorio contiene los activos iniciales para el modelo de base de datos de **Little Lemon**, una cadena ficticia de restaurantes. El enfoque se basa en una estructura relacional bien normalizada, acompañada de visualización y documentación técnica clara.
+Description
+This repository contains the core assets for the Little Lemon database model, developed for a fictional restaurant chain. It centers on a well-normalized relational structure, complemented by visual documentation, stored procedures, analytics scripts, and interactive dashboards for comprehensive technical delivery.
 
-## 📂 Archivos incluidos
+Included Files
+| File | Description | |------|-------------| | LittleLemonDB.sql | SQL script with table definitions, relationships, constraints, and sample data | | LittleLemonDM.mwb | Editable model in MySQL Workbench for visualization and refinement | | LittleLemonDM.png | Exported ER diagram for documentation and presentation | | LittleLemonProcedures.sql | Set of implemented stored procedures as specified (e.g., AddBooking, CancelBooking, GetMaxQuantity) | | GeOrderDetails | Written project statement describing goals, design rationale, and scope | | LittleLemon_Jupyter.ipynb | Python notebook with SQL connector setup, queries, and analytics outputs | | LittleLemon_Tableau.twbx | Tableau file containing data visualizations such as bar charts, calculated fields, and dashboards for customer insights |
 
-| Archivo              | Descripción                                                           |
-|----------------------|-----------------------------------------------------------------------|
-| `LittleLemonDB.sql`  | Script SQL con definición de tablas, relaciones y restricciones       |
-| `LittleLemonDM.mwb`  | Modelo en MySQL Workbench para edición y revisión                     |
-| `LittleLemonDM.png`  | Diagrama ER exportado como imagen para documentación o presentación   |
+Requirements
+- MySQL Workbench (recommended for viewing/editing .mwb models)
+- SQL-compliant server or local environment
+- Jupyter Notebook with Python connector packages (e.g., mysql.connector)
+- Tableau Desktop or Reader for viewing dashboards
+- Image viewer to review the ER diagram
 
-## 🛠️ Requisitos
+Installation / Execution
+Clone the repository:
+git clone [<repository-URL>](https://github.com/misaelsierra/db-capstone-project.git)
 
-- **MySQL Workbench** (recomendado para visualizar o editar el modelo `.mwb`)
-- Servidor o entorno local compatible con SQL estándar
-- Visualizador de imágenes para revisar el diagrama ER
 
-## 🚀 Instalación / Ejecución
+Deploy the database:
+- Open MySQL Workbench
+- Run LittleLemonDB.sql to create and populate the database
+- Review LittleLemonProcedures.sql to explore and test stored procedures
+Explore analytics:
+- Open LittleLemon_Jupyter.ipynb to run queries and generate insights from the database
+- Open LittleLemon_Tableau.twbx for interactive visualizations and business reporting
+Technical Notes
+- The database model follows best practices in normalization and modularity
+- Stored procedures implement transactional logic for booking management and validation
+- Python integration enables query testing and data retrieval for analytics workflows
+- Tableau dashboards visualize customer data, profitability, and trends for actionable insights
+- All components are documented for peer review and knowledge sharing
+Credits
+Developed by @misaelsierra as part of a database modeling capstone. Includes modeling artifacts, scripting, analytics, and professional documentation for technical evaluation and presentation.
 
-1. Clonar el repositorio:
-   ```bash
-   git clone <URL-del-repositorio>
-2. Ejecutar el script SQL:
-- Abrir MySQL Workbench
-- Importar LittleLemonDB.sql para crear la base de datos
-3. Revisar el diagrama:
-- Abrir LittleLemonDM.png como referencia visual del modelo
-Notas técnicas
-- El modelo sigue buenas prácticas de normalización, incluyendo separación de datos por tipo (e.g. direcciones).
-- Está estructurado para posible integración con modelos dimensionales en análisis futuros.
-- Se incluye documentación clara para facilitar revisión entre pares y aprendizaje técnico.
-CréditosDesarrollado por @misaelsierra como parte del proyecto capstone de modelado de bases de datos.
-Incluye activos técnicos y comunicativos para revisión profesional y presentación.
 
